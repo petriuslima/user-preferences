@@ -1,0 +1,36 @@
+=====================================
+
+[Data_1_2Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_1_2_1]
+Comment=Inicia a ferramenta gráfica para captura de telas
+Enabled=true
+Name=Iniciar a ferramenta de captura de tela
+Type=SIMPLE_ACTION_DATA
+
+[Data_1_2_1Actions]
+ActionsCount=1
+
+[Data_1_2_1Actions0]
+Arguments='Pictures/Screenshots' 0 0
+Call=graphicCapture
+RemoteApp=org.dharkael.Flameshot
+RemoteObj=/
+Type=DBUS
+
+[Data_1_2_1Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_1_2_1Triggers]
+Comment=Ação simples
+TriggersCount=1
+
+[Data_1_2_1Triggers0]
+Key=Print
+Type=SHORTCUT
+Uuid={f48dbed0-0182-4bb0-a801-ec795f7d73fc}
+
+=====================================
