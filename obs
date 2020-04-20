@@ -1,0 +1,5 @@
+To use obs without flickering on screen record
+
+Go to: System Settings > Display and Monitor > Compositor
+
+And disable to Never the Tearing prevention ("vsync").
