@@ -16,7 +16,7 @@ ActionsCount=1
 [Data_1_2_1Actions0]
 Arguments='Pictures/Screenshots' 0 0
 Call=graphicCapture
-RemoteApp=org.dharkael.Flameshot
+RemoteApp=org.flameshot.Flameshot
 RemoteObj=/
 Type=DBUS
 
