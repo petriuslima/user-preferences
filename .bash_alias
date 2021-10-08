@@ -1,0 +1,1 @@
+alias sshservers="cat ~/.ssh/config | grep 'Host '"

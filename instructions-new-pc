@@ -1,0 +1,53 @@
+Turn off mouse acceleration
+Configure to a complete screen path in around 11,15cm
+
+MANJARO/GNOME
+Add shortcut ctrl+shift+t for gnome-terminal
+
+Commands
+sudo pacman-mirrors --fasttrack
+sudo pacman -Syu --noconfirm
+sudo pacman -S vim base-devel htop dbeaver discord filezilla flameshot obs-studio peek yay opera opera-ffmpeg-codecs flameshot --noconfirm
+yay -S --noconfirm --noprovides --nocleanmenu --nodiffmenu google-chrome sublime-text-4 skypeforlinux-stable-bin slack-desktop
+
+yay -S --noconfirm --noprovides --nocleanmenu --nodiffmenu --pgpfetch spotify
+sudo pacman -S git libreoffice-fresh (?)
+
+Install Docker
+sudo pacman -S docker docker-compose
+sudo usermod -aG docker $USER
+sudo systemctl start docker.service
+sudo systemctl enable docker.service
+
+Logar no opera
+	- Adicionar as extensões de
+		- Instalar extensões do Google Chrome (https://addons.opera.com/pt-br/extensions/details/install-chrome-extensions/)
+		- Documentos Google Offline (https://chrome.google.com/webstore/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi)
+		- Pomodoro (https://chrome.google.com/webstore/detail/marinara-pomodoro®-assist/lojgmehidjdhhbmpjfamhpkpodfcodef)
+		- Video Speed Controller (https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk)
+		- Wappalyzer (https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg)
+
+Aumentar swap (6GB):
+
+sudo swapoff /swap/swapfile
+sudo dd if=/dev/zero of=/swap/swapfile bs=1M count=6144 status=progress
+sudo chmod 600 /swap/swapfile
+sudo mkswap /swap/swapfile
+sudo swapon /swap/swapfile
+
+
+Add user-preferences on sublime-text-4
+
+Add Google online account
+
+Configure Flameshot
+	- gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '[]' //disable PrintScr shortcut
+	- Add new shortcut for flameshot using the command "/usr/bin/flameshot gui"
+	
+Change GNOME default change applications behavior to change only between apps in the current workspace using the following command: `gsettings set org.gnome.shell.app-switcher current-workspace-only true`
+
+
+* Add new issue for manjaro that custom shortcuts are not updating the previews screen when it is edited.
+
+Criar comando ao startar manjaro para que os pacman-mirrors sejam atualizados pelo fasttrak
+sudo pacman-mirrors --fasttrack

@@ -1,0 +1,8 @@
+[user]
+	email = petrius.lima@cassum.dev
+	name = Petrius Lima
+
+[includeIf "gitdir:~/personal/"]
+	path = ~/personal/.gitconfig
+[core]
+	editor = vim
