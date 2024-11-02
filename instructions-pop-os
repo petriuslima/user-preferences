@@ -1,0 +1,29 @@
+Configura para 24h
+Habilita o não perturbe nas notificações
+Diminui a sensibilidade do mouse
+Altera para exibir maximizar
+Altera para exibir áreas de trabalho no canto esquerdo superior
+Altera para abrir, minimizar ou visualizar janelas na dock
+Instala folder-color e gnome-sushi
+Configurar o ctrl+alt+t para o terminal
+
+Executar os comandos abaixo
+`echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/trusted.gpg.d/dbeaver.gpg
+`wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -`
+`sudo apt update`
+
+Instalar o build-essential htop wget dbeaver-ce discord filezilla flameshot obs-studio peek
+
+Instalar google chrome:
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+
+sudo apt install snapd
+sudo snapd install sublime-text slack spotify
+
+instalar zsh e tema powerlevel10k
+
+Adicionar isso com os aplicativos iniciados com o sistema:
+	- /usr/bin/google-chrome-stable --profile-directory=Default
+
+(Ver esse vídeo: https://www.youtube.com/watch?v=Q9vtzTKX0zo)
